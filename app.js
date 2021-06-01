@@ -20,7 +20,7 @@ app.use(require('./routes/index.js'));
 
 
 
-let server = app.listen(3000, () => {
+let server = app.listen(port, () => {
     console.log(`listening on port ${port}`);
 })
 
