@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('partials/structure/head.ejs') %> 
+</head>
+    <body>
+        <header>
+            <div class="jumbotron hidden-xs">
+                <iframe width="100%" height="700" src="https://www.youtube.com/embed/-HAuK8Z6q6I?start=125" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </div><!-- jumbotron -->
+    
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+    
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+    
+                        <a href="/" class="navbar-brand">Artist of the Decade</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="/albums" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Albums <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <% albumObjects.forEach(albumObj => { %>
+                                    <li><a href= "/album/<%= albumObj.shortName %> "><%= albumObj.title %> </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <% }) %>
+                                </ul>
+                            </li>
+                            <li><a href="/mixtapes" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Mixtapes <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <% mixtapeObjects.forEach(mixtapeObj => { %>
+                                    <li><a href= "/album/<%= mixtapeObj.shortName %> "><%= mixtapeObj.title %> </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <% }) %>
+                                </ul>
+                            </li>
+                            <li><a href="/eps" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Eps <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <% epObjects.forEach(epObj => { %>
+                                    <li><a href= "/album/<%= epObj.shortName %> "><%= epObj.title %> </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <% }) %>
+                                </ul>
+                            </li>
+                        </ul><!-- nav -->
+                    </div><!-- navbar-collapse -->
+                </div><!-- container -->
+            </nav>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="maincontent">
+    
+                        <article class="article">
+                            <h1 class="article-title">ALL ABOUT DRIZZY </h1>
+                            <p>Aubrey Drake Graham (born October 24, 1986) is a Canadian rapper, singer, songwriter, actor, producer, and entrepreneur. A prominent figure in popular music, Drake is credited for popularizing the Toronto sound. He first gained recognition by starring in the teen drama television series Degrassi: The Next Generation (2001–2007); pursuing a career in music, he left the series and released his debut mixtape Room for Improvement (2006). He then released the mixtapes Comeback Season (2007) and So Far Gone (2009), before signing to Lil Wayne's Young Money Entertainment.</p>
+
+                            <p>
+
+                                Drake released his debut studio album Thank Me Later in 2010, which debuted at number one on the US Billboard 200. He achieved major critical success with Take Care (2011), and commercial success with Nothing Was the Same (2013) and his first commercial mixtape If You're Reading This It's Too Late (2015); the later two were certified multi-platinum in the US.[9] Drake's fourth album Views (2016) sat atop the Billboard 200 for 13 nonconsecutive weeks, becoming the first album by a male solo artist to do so in over a decade.[10] Marketed as a playlist, Drake's second solo commercial mixtape More Life (2017) set multiple streaming records.[11] In 2018, he released the double album Scorpion, which produced three number-one singles on the Billboard Hot 100. Departing Young Money in 2018, Drake's third commercial mixtape Dark Lane Demo Tapes was released in 2020, and featured the Hot 100 number-one lead single "Toosie Slide". In 2021, the EP Scary Hours 2 included the number one single "What's Next" and set chart records.
+                            </p>
+                            <p>
+                                
+                                As an entrepreneur, Drake founded the OVO Sound record label with longtime collaborator 40 in 2012. In 2013, Drake became the new "global ambassador" of the Toronto Raptors, joining the executive committee of the NBA franchise, while owning naming rights to its practice facility. In 2016, he began collaborating with American entrepreneur Brent Hocking on the bourbon whiskey Virginia Black; it eventually broke sale records in Canada. Drake has also designed fashion, the most notable including a sub-label collaboration with Nike, alongside other business ventures. In 2018, he was reportedly responsible for 5% (CAD$440 million) of Toronto's CAD$8.8 billion total annual tourism income.[14]
+                            </p>
+                            <p>
+                                Among the world's best-selling music artists, with over 170 million records sold, Drake is ranked as the highest-certified digital singles artist in the United States by the RIAA.[15] He has won four Grammy Awards, six American Music Awards, a record 27 Billboard Music Awards, two Brit Awards, and three Juno Awards. Drake also holds several Billboard chart records; he has the most top 10 hits on the Billboard Hot 100, the most charted songs (231[16]) of any artists ever on the Billboard Hot 100, the most simultaneously charted Hot 100 songs in a single week (27), the most continuous time on the Hot 100 (431 weeks), and the most Hot 100 debuts in a week (22). He also has the most number-one singles on the R&B/Hip-Hop Airplay, Hot R&B/Hip-Hop Songs, Hot Rap Songs, and Rhythmic Airplay charts.</p>
+                            <p>Each Featured Artist has an opportunity to speak at one of our meetups and share his or her
+                                vision, perspective, and techniques with attendees on a more personal level than at our
+                                large conference. It is truly an honor to be a CAC Featured Artist and many past students
+                                artists who were featured at CAC have gone on to brilliant careers in art.</p>
+                        </article><!-- article -->
+    
+                       
+    
+                    </div>
+                </div><!-- primary -->
+                <aside class="col-sm-4">
+                    <article class="sidebar">
+                        <h1 class="sidebar-title text-center">Discography</h1>
+                    </article><!-- article -->
+                </aside><!-- secondary -->
+                <aside class="col-sm-4">
+                    <div class="pixgrid text-center">
+                        <h1>Albums</h1>
+                        <% albumObjects.forEach(albumObj => { %>
+                         
+                     
+                        
+                 
+                        <a href= "/album/<%= albumObj.shortName %> ">
+                        <img height="30%" width="20%" src="/images/<%= albumObj.albumCover %>" class="card-img-top" alt="...">
+                    
+                        <% }) %>
+                    </a>
+                    <h1>Mixtapes</h1>
+                    <% mixtapeObjects.forEach(mixtapeObj => { %>
+                       
+                
+                        <a href="http://localhost:3000/album/<%= mixtapeObj.shortName %> ">
+                            <img height="30%" width="20%"src="/images/<%= mixtapeObj.albumCover %>" class="card-img-top" alt="...">
+                             
+                            <% }) %>
+                        </a>
+                    <h1>Eps</h1>
+                    <% epObjects.forEach(epObj => { %>
+                       
+                
+                        <a href="http://localhost:3000/album/<%= epObj.shortName %> ">
+                            <img height="30%" width="20%"src="/images/<%= epObj.albumCover %>" class="card-img-top" alt="...">
+                             
+                            <% }) %>
+                        </a>
+                        
+                </div>
+                    </div>
+                </aside><!-- secondary -->
+            </div>
+        </div><!-- container -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+   <container>
+
+       
+    </body>
+
+</html>
